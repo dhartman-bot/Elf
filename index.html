@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Days of Elf on the Shelf Scene Ideas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            font-size: 14px;
+            opacity: 0.5;
+            letter-spacing: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .header .elf-names {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 24px;
+            margin-top: 15px;
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .week-section {
+            margin-bottom: 40px;
+        }
+
+        .week-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-number {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+        }
+
+        .day-date {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .difficulty {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .difficulty.easy {
+            background: #4ade80;
+            color: #166534;
+        }
+
+        .difficulty.medium {
+            background: #fbbf24;
+            color: #92400e;
+        }
+
+        .day-content {
+            padding: 20px;
+        }
+
+        .scene-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a472a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .scene-title::before {
+            content: "🎄";
+        }
+
+        .setup {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .props {
+            background: #f0fdf4;
+            border-left: 4px solid #4ade80;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .props-title {
+            font-weight: 700;
+            color: #166534;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .props-list {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .note {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .note-title {
+            font-weight: 700;
+            color: #92400e;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .note-text {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .bonus-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .bonus-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .props-checklist {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .checklist-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+            color: #c41e3a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .checklist-item input {
+            width: 18px;
+            height: 18px;
+            accent-color: #c41e3a;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .footer .emoji-row {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .header {
+                background: #c41e3a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .day-card {
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+            .days-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Alternative Scene Styles */
+        .alt-btn {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .alt-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+        }
+
+        .alt-btn.showing {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        }
+
+        .alternatives {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px dashed #e5e7eb;
+        }
+
+        .alternatives.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .alt-scene {
+            background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+            border-left: 4px solid #8b5cf6;
+            padding: 12px 15px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 10px;
+        }
+
+        .alt-scene:last-child {
+            margin-bottom: 0;
+        }
+
+        .alt-scene-title {
+            font-weight: 700;
+            color: #6d28d9;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .alt-scene-setup {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .alt-scene-props {
+            font-size: 13px;
+            color: #7c3aed;
+        }
+
+        .alt-label {
+            display: inline-block;
+            background: #8b5cf6;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Skill Download Section */
+        .skill-download {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            border: 3px solid #ffd700;
+        }
+
+        .skill-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .skill-description {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skill-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .skill-feature {
+            background: rgba(255,255,255,0.15);
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-icon {
+            font-size: 18px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .install-instructions {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+            text-align: left;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .install-instructions h4 {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .install-instructions ol {
+            color: white;
+            margin-left: 20px;
+        }
+
+        .install-instructions li {
+            margin-bottom: 8px;
+        }
+
+        .install-instructions code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .install-instructions em {
+            color: #87ceeb;
+        }
+
+        /* Claude AI Section Styles */
+        .claude-ai-section {
+            background: linear-gradient(135deg, #D97757 0%, #c45a3a 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            border: 3px solid #ffd700;
+        }
+
+        .claude-ai-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 32px;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .claude-ai-subheader {
+            color: #fff8e7;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .copy-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .copy-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+        }
+
+        .usage-steps {
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+            text-align: left;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .usage-steps h4 {
+            color: #ffd700;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .usage-steps ol {
+            color: white;
+            margin-left: 20px;
+        }
+
+        .usage-steps li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .usage-steps a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        .example-prompts {
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .example-prompts h5 {
+            color: #ffd700;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .example-prompts p {
+            color: #e0e0e0;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .claude-code-mini {
+            background: rgba(30, 58, 95, 0.5);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .claude-code-mini p {
+            color: #87ceeb;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .claude-code-mini a {
+            color: #ffd700;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>❄ 25 Days of Elf Magic ❄</h1>
+        <p class="subtitle">Scene Ideas for the Christmas Season</p>
+        <p class="elf-names">Starring: Your Family's Elf</p>
+    </div>
+
+    <div class="container">
+        <!-- Week 1 -->
+        <div class="week-section">
+            <h2 class="week-header">🎄 Week 1: Arrival & Getting Settled (Dec 1-7) 🎄</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 1</div>
+                            <div class="day-date">December 1</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Grand Arrival with Baby Elf</h3>
+                        <p class="setup">Snowflake arrives with baby elf in a tiny basket "carrier", arrival letter nearby, small bag of "North Pole snow" (cotton balls)</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Baby elf, small basket, cotton balls, arrival letter, tiny blanket</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Naming instructions for baby elf</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 2</div>
+                            <div class="day-date">December 2</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Baby Elf's Name Celebration</h3>
+                        <p class="setup">Elves surrounded by tiny letter tiles/Scrabble pieces spelling out chosen name, mini celebration banner</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Letter tiles or Scrabble pieces, small ribbon/banner, confetti</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Thank you for naming baby elf!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 3</div>
+                            <div class="day-date">December 3</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Marshmallow Bubble Bath</h3>
+                        <p class="setup">Elves relaxing in a bowl or mug filled with mini marshmallows, tiny towel nearby</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Bowl or mug, mini marshmallows, small fabric scrap for towel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 4</div>
+                            <div class="day-date">December 4</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Movie Night</h3>
+                        <p class="setup">Elves sitting in front of TV with tiny popcorn bowl (bottle cap), cozy blanket</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Bottle cap, popped popcorn kernels, small fabric blanket</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 5</div>
+                            <div class="day-date">December 5</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Elf Classroom</h3>
+                        <p class="setup">Snowflake teaching baby elf! Mini "classroom" with elves at small table, tiny chalkboard with "How to Watch for Santa"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small paper chalkboard, tiny desk (matchbox), chalk drawing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 6</div>
+                            <div class="day-date">December 6</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Breakfast Surprise</h3>
+                        <p class="setup">Elves with a plate of donuts or treats and a note saying "We made breakfast!"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Donuts or treats, small note</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Praise for good behavior yesterday</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 7</div>
+                            <div class="day-date">December 7</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Craft Time</h3>
+                        <p class="setup">Elves surrounded by tiny scissors, paper scraps, and mini paper snowflakes they "made"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small scissors, paper scraps, pre-cut tiny snowflakes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="week-section">
+            <h2 class="week-header">🎅 Week 2: Adventures & Mischief (Dec 8-14) 🎅</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 8</div>
+                            <div class="day-date">December 8</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Zip Line Adventure</h3>
+                        <p class="setup">String/ribbon stretched across room, elves hanging from it with small hangers or clips</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">String or ribbon, clips or small hangers, attach to light fixtures/shelves</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 9</div>
+                            <div class="day-date">December 9</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Fishing Trip</h3>
+                        <p class="setup">Elves with tiny fishing poles (stick + string) over a sink or bowl with goldfish crackers</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small sticks, string, goldfish crackers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 10</div>
+                            <div class="day-date">December 10</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Snow Angels</h3>
+                        <p class="setup">Elves lying in flour or powdered sugar on counter making "snow angels"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Flour or powdered sugar, parchment paper (for easy cleanup!)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 11</div>
+                            <div class="day-date">December 11</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Game Night</h3>
+                        <p class="setup">Elves playing games with mini cards, dice, or board game pieces scattered around</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Playing cards, dice, or small game pieces</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 12</div>
+                            <div class="day-date">December 12</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Photo Booth Fun</h3>
+                        <p class="setup">Elves posing with family photos, maybe drew mustaches on printed photos (use dry erase on frames!)</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Family photos in frames, dry-erase markers, tiny props</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">"We love your family!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 13</div>
+                            <div class="day-date">December 13</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Indoor Camping</h3>
+                        <p class="setup">Tiny tent (napkin over sticks), mini campfire (orange/red tissue paper), elves with tiny s'mores</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Napkin, sticks, tissue paper for fire, mini marshmallows</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 14</div>
+                            <div class="day-date">December 14</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gift Wrapping Station</h3>
+                        <p class="setup">Elves surrounded by ribbon, small wrapped boxes, tape dispenser - busy helping!</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small boxes, wrapping paper scraps, ribbon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week-section">
+            <h2 class="week-header">⭐ Week 3: Holiday Spirit (Dec 15-21) ⭐</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 15</div>
+                            <div class="day-date">December 15</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gingerbread House</h3>
+                        <p class="setup">Elves building with graham crackers and icing, partially "built" house</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Graham crackers, icing, candy decorations</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Recipe card for family to make one together!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 16</div>
+                            <div class="day-date">December 16</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Epic Snowball Fight</h3>
+                        <p class="setup">Elves hiding behind barriers (books, boxes) with mini snowballs everywhere</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Cotton balls or white pom poms, small barriers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 17</div>
+                            <div class="day-date">December 17</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">North Pole Mail</h3>
+                        <p class="setup">Elves with tiny mailbox, envelopes, encouraging kids to write Santa</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small box as mailbox, mini envelopes, paper, crayons nearby</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Special Mission</div>
+                            <div class="note-text">Write your letters to Santa today!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 18</div>
+                            <div class="day-date">December 18</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Hot Cocoa Party</h3>
+                        <p class="setup">Elves with tiny mugs (thimbles or bottle caps), marshmallows, cocoa packets</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Thimbles or bottle caps, mini marshmallows, cocoa mix</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Suggest family hot cocoa night!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 19</div>
+                            <div class="day-date">December 19</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Decorating the Tree</h3>
+                        <p class="setup">Elves climbing the Christmas tree, tangled in garland or hanging on an ornament</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Christmas tree access, secure positioning (safety first!)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 20</div>
+                            <div class="day-date">December 20</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Story Time</h3>
+                        <p class="setup">Elves with a tiny book or sitting on a Christmas book, reading to stuffed animals</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small book or Christmas storybook, stuffed animals as audience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 21</div>
+                            <div class="day-date">December 21</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Caroling</h3>
+                        <p class="setup">Elves with tiny songbooks (folded paper), lined up like a choir</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tiny folded paper songbooks, arrange elves in choir formation</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">List of family's favorite Christmas songs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="week-section">
+            <h2 class="week-header">🎁 Week 4: The Final Countdown (Dec 22-25) 🎁</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 22</div>
+                            <div class="day-date">December 22</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Cookie Baking</h3>
+                        <p class="setup">Elves in kitchen with flour, mini cookie cutters, ready to make Santa's cookies</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Flour, small bowl, cookie cutters</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Cookie recipe for Santa's cookies!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 23</div>
+                            <div class="day-date">December 23</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Wrapping Chaos</h3>
+                        <p class="setup">Elves completely tangled in ribbon and wrapping paper, surrounded by tape and scissors</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Wrapping paper scraps, ribbon, tape</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card" style="border: 3px solid #ffd700;">
+                    <div class="day-header" style="background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);">
+                        <div>
+                            <div class="day-number">Day 24</div>
+                            <div class="day-date">December 24 - Christmas Eve</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">The Goodbye</h3>
+                        <p class="setup">Elves with packed tiny suitcase, goodbye letter, small gift for each child</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tiny suitcase (matchbox), goodbye letter, candy canes or small treats</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Heartfelt goodbye letter, promise to return next year</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card" style="border: 3px solid #ffd700;">
+                    <div class="day-header" style="background: linear-gradient(135deg, #ffd700 0%, #f59e0b 100%); color: #1a472a;">
+                        <div>
+                            <div class="day-number">Day 25</div>
+                            <div class="day-date">December 25 - Christmas!</div>
+                        </div>
+                        <span class="difficulty easy" style="background: white;">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gone Until Next Year!</h3>
+                        <p class="setup">Empty spot where elves usually sit, with a small note or sprinkle of "magic dust"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small note, tiny bit of glitter (magic dust)</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Final Note</div>
+                            <div class="note-text">"See you next year! Love, Snowflake & [Baby Elf Name]"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonus Section -->
+        <div class="bonus-section">
+            <h2 class="bonus-header">🌟 Bonus Scenes (Swap In As Needed) 🌟</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Sick Day</div>
+                            <div class="day-date">When someone's under the weather</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Doctor Checkup</h3>
+                        <p class="setup">Elf in tissue box "bed" with tiny thermometer, encouraging rest</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tissue box, small paper thermometer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Weekend</div>
+                            <div class="day-date">Family time suggestion</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Movie Theater</h3>
+                        <p class="setup">Elves set up movie area with popcorn, suggest family movie night</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Popcorn, small paper "tickets"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Reminder</div>
+                            <div class="day-date">Gentle behavior nudge</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Naughty/Nice List</h3>
+                        <p class="setup">Elves with scroll showing "Nice List" with kids' names, small reminder note</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Paper scroll, gentle reminder letter</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Claude AI - One Click Copy -->
+        <div class="claude-ai-section">
+            <h2 class="claude-ai-header">🎅 Use Claude AI to Create Elf Magic 🎅</h2>
+            <p class="claude-ai-subheader">Copy these instructions to Claude AI and create custom letters, notes, and scenes instantly!</p>
+
+            <button id="copyClaudeBtn" class="copy-btn" onclick="copyClaudeInstructions()">
+                📋 Copy Instructions for Claude AI
+            </button>
+
+            <div class="usage-steps">
+                <h4>How to Use:</h4>
+                <ol>
+                    <li>Click the button above to copy the instructions</li>
+                    <li>Go to <a href="https://claude.ai" target="_blank">claude.ai</a> and start a new chat</li>
+                    <li>Paste the instructions (Ctrl/Cmd + V)</li>
+                    <li>Then ask Claude things like:</li>
+                </ol>
+                <div class="example-prompts">
+                    <h5>Example Prompts:</h5>
+                    <p>"Create an arrival letter for my kids Emma and Jake from our elf Twinkle"</p>
+                    <p>"Write a goodbye letter for Christmas Eve"</p>
+                    <p>"Give me 3 easy scene ideas using only kitchen items"</p>
+                    <p>"Create a nice report for sharing toys today"</p>
+                </div>
+            </div>
+
+            <div class="claude-code-mini">
+                <p>🖥️ Developer? Get the full Claude Code skill for PDF generation</p>
+                <a id="downloadSkill" download="elf-on-shelf.zip" style="cursor: pointer;">Download elf-on-shelf.zip</a>
+            </div>
+        </div>
+
+        <!-- Props Checklist -->
+        <div class="props-checklist">
+            <h2 class="checklist-header">📋 Master Props Checklist 📋</h2>
+            <div class="checklist-grid">
+                <label class="checklist-item"><input type="checkbox"> Cotton balls</label>
+                <label class="checklist-item"><input type="checkbox"> Mini marshmallows</label>
+                <label class="checklist-item"><input type="checkbox"> Small fabric scraps</label>
+                <label class="checklist-item"><input type="checkbox"> String / ribbon</label>
+                <label class="checklist-item"><input type="checkbox"> Paper / cardstock</label>
+                <label class="checklist-item"><input type="checkbox"> Bottle caps / thimbles</label>
+                <label class="checklist-item"><input type="checkbox"> Tape & scissors</label>
+                <label class="checklist-item"><input type="checkbox"> Small toys / figurines</label>
+                <label class="checklist-item"><input type="checkbox"> Goldfish crackers</label>
+                <label class="checklist-item"><input type="checkbox"> Graham crackers</label>
+                <label class="checklist-item"><input type="checkbox"> Letter tiles / Scrabble</label>
+                <label class="checklist-item"><input type="checkbox"> Small sticks (fishing poles)</label>
+                <label class="checklist-item"><input type="checkbox"> Tissue paper (red/orange)</label>
+                <label class="checklist-item"><input type="checkbox"> Flour / powdered sugar</label>
+                <label class="checklist-item"><input type="checkbox"> Playing cards / dice</label>
+                <label class="checklist-item"><input type="checkbox"> Matchbox (tiny suitcase)</label>
+                <label class="checklist-item"><input type="checkbox"> White pom poms</label>
+                <label class="checklist-item"><input type="checkbox"> Small clips / hangers</label>
+                <label class="checklist-item"><input type="checkbox"> Candy canes</label>
+                <label class="checklist-item"><input type="checkbox"> Glitter (magic dust)</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="emoji-row">🎄 ❄ 🎅 🎁 ⭐ 🦌 ❄ 🎄</div>
+        <p>Have a magical Christmas season!</p>
+    </div>
+
+    <script>
+        // Alternative scenes for each day (when you don't have the props)
+        const alternatives = {
+            1: [
+                { title: "Parachute Landing", setup: "Elves tangled in a handkerchief 'parachute' as if they just landed", props: "Handkerchief or napkin, string" },
+                { title: "Sleeping In", setup: "Elves asleep in a shoe or slipper after their long journey", props: "Any shoe or slipper, tissue for blanket" }
+            ],
+            2: [
+                { title: "Drawing the Name", setup: "Elves with crayons and paper, baby elf's name written in colorful letters", props: "Paper, crayons" },
+                { title: "Name in Cereal", setup: "Baby elf's name spelled out in cereal pieces on the counter", props: "Any cereal (Cheerios work great)" }
+            ],
+            3: [
+                { title: "Toilet Paper Fort", setup: "Elves built a fort/tower out of toilet paper rolls", props: "Toilet paper rolls" },
+                { title: "Sock Sleeping Bag", setup: "Elves snuggled up in socks like sleeping bags", props: "Clean socks" }
+            ],
+            4: [
+                { title: "Book Stack Slide", setup: "Elves sliding down a stack of books like a slide", props: "Stack of books" },
+                { title: "Toy Car Race", setup: "Elves in/on toy cars lined up at a 'starting line'", props: "Toy cars, tape for finish line" }
+            ],
+            5: [
+                { title: "Coloring Time", setup: "Elves with crayons and coloring book, 'teaching' baby elf to color", props: "Coloring book, crayons" },
+                { title: "ABC Lesson", setup: "Elves pointing at alphabet magnets on the fridge", props: "Fridge magnets" }
+            ],
+            6: [
+                { title: "Fruit Snack Feast", setup: "Elves surrounded by opened fruit snack packages", props: "Fruit snacks" },
+                { title: "Cereal Party", setup: "Elves in/around a bowl of colorful cereal", props: "Bowl, cereal" }
+            ],
+            7: [
+                { title: "Sticker Fun", setup: "Elves covered in stickers or decorating paper with stickers", props: "Stickers, paper" },
+                { title: "Play-Doh Sculpture", setup: "Elves 'making' something with Play-Doh", props: "Play-Doh" }
+            ],
+            8: [
+                { title: "Climbing the Lamp", setup: "Elves scaling a lamp with ribbon or string", props: "Lamp, ribbon" },
+                { title: "Curtain Climbers", setup: "Elves hanging from curtains or curtain rod", props: "Curtains (position safely)" }
+            ],
+            9: [
+                { title: "Bathtub Boat", setup: "Elves in a plastic container 'boat' in the bathtub (dry)", props: "Plastic container, bathtub" },
+                { title: "Rubber Duck Party", setup: "Elves hanging out with rubber ducks", props: "Rubber ducks" }
+            ],
+            10: [
+                { title: "Pillow Mountain", setup: "Elves climbing or sitting atop a pile of pillows", props: "Pillows" },
+                { title: "Blanket Hammock", setup: "Elves in a small blanket/scarf hammock between chair legs", props: "Small blanket or scarf" }
+            ],
+            11: [
+                { title: "Puzzle Helpers", setup: "Elves 'working on' a puzzle with a few pieces moved", props: "Any puzzle" },
+                { title: "LEGO Builders", setup: "Elves building with LEGO blocks", props: "LEGO blocks" }
+            ],
+            12: [
+                { title: "Mirror Selfie", setup: "Elves posed in front of a mirror as if taking a selfie", props: "Small mirror" },
+                { title: "Sunglasses Fashion", setup: "Elves trying on kids' sunglasses or accessories", props: "Sunglasses, hats, etc." }
+            ],
+            13: [
+                { title: "Pillow Fort", setup: "Elves inside a small pillow/cushion fort", props: "Small pillows or cushions" },
+                { title: "Box House", setup: "Elves living in a shoebox 'house' with cut windows", props: "Shoebox" }
+            ],
+            14: [
+                { title: "Tape Madness", setup: "Elves tangled in tape, stuck to the counter", props: "Tape (painter's tape for easy cleanup)" },
+                { title: "Newspaper Pile", setup: "Elves hiding in crumpled newspaper/junk mail", props: "Newspaper or junk mail" }
+            ],
+            15: [
+                { title: "Cracker House", setup: "Elves building with any crackers you have", props: "Any crackers" },
+                { title: "Sugar Cube Tower", setup: "Elves stacking sugar cubes", props: "Sugar cubes" }
+            ],
+            16: [
+                { title: "Sock Snowballs", setup: "Elves having a 'snowball' fight with rolled up white socks", props: "White socks rolled into balls" },
+                { title: "Paper Ball Fight", setup: "Elves behind barriers with crumpled paper balls", props: "Crumpled paper" }
+            ],
+            17: [
+                { title: "Crayon Letter Writing", setup: "Elves at table with paper and crayons for Santa letters", props: "Paper, crayons, envelopes" },
+                { title: "Sticky Note Messages", setup: "Elves surrounded by sticky notes with messages to Santa", props: "Sticky notes, pen" }
+            ],
+            18: [
+                { title: "Tea Party", setup: "Elves at a toy tea set having a party", props: "Toy tea set or small cups" },
+                { title: "Candy Cane Snack", setup: "Elves nibbling on candy canes", props: "Candy canes" }
+            ],
+            19: [
+                { title: "Ornament Admiring", setup: "Elves sitting near the tree pointing at favorite ornaments", props: "Near Christmas tree" },
+                { title: "Tinsel Tangled", setup: "Elves wrapped up in tinsel or garland on the floor", props: "Tinsel or garland" }
+            ],
+            20: [
+                { title: "Stuffed Animal Huddle", setup: "Elves in a circle with stuffed animals having a meeting", props: "Stuffed animals" },
+                { title: "Pillow Reading Nook", setup: "Elves on a pillow with a small book", props: "Pillow, any small book" }
+            ],
+            21: [
+                { title: "Dance Party", setup: "Elves posed as if dancing near a phone/speaker", props: "Phone or small speaker" },
+                { title: "Instrument Band", setup: "Elves with toy instruments or kitchen items as instruments", props: "Toy instruments, wooden spoons, pots" }
+            ],
+            22: [
+                { title: "Sprinkle Art", setup: "Elves made shapes/pictures with sprinkles on a plate", props: "Sprinkles, plate" },
+                { title: "Cereal Art", setup: "Elves arranged cereal into a Christmas tree shape", props: "Cereal" }
+            ],
+            23: [
+                { title: "Bow Bonanza", setup: "Elves covered in gift bows stuck all over them", props: "Stick-on gift bows" },
+                { title: "Tissue Paper Mess", setup: "Elves buried in colorful tissue paper", props: "Tissue paper" }
+            ],
+            24: [
+                { title: "Note & Candy", setup: "Simple goodbye note with candy canes for each child", props: "Paper, pen, candy canes" },
+                { title: "Photo Memory", setup: "Elves with a printed photo of the family and goodbye note", props: "Printed photo, note" }
+            ],
+            25: [
+                { title: "Sparkle Trail", setup: "Empty spot with a trail of glitter leading to window", props: "A tiny bit of glitter" },
+                { title: "Thank You Note", setup: "Just a handwritten note thanking kids for a great season", props: "Paper, pen" }
+            ]
+        };
+
+        function toggleAlternatives(day) {
+            const card = document.querySelector(`[data-day="${day}"]`);
+            const altContainer = card.querySelector('.alternatives');
+            const btn = card.querySelector('.alt-btn');
+
+            if (altContainer.classList.contains('show')) {
+                altContainer.classList.remove('show');
+                btn.textContent = "🔄 Need Different Props? See Alternatives";
+                btn.classList.remove('showing');
+            } else {
+                // Generate alternatives if not already there
+                if (!altContainer.innerHTML) {
+                    const dayAlts = alternatives[day];
+                    if (dayAlts) {
+                        altContainer.innerHTML = dayAlts.map((alt, i) => `
+                            <div class="alt-scene">
+                                <span class="alt-label">Alternative ${i + 1}</span>
+                                <div class="alt-scene-title">${alt.title}</div>
+                                <div class="alt-scene-setup">${alt.setup}</div>
+                                <div class="alt-scene-props"><strong>Props:</strong> ${alt.props}</div>
+                            </div>
+                        `).join('');
+                    }
+                }
+                altContainer.classList.add('show');
+                btn.textContent = "✓ Hide Alternatives";
+                btn.classList.add('showing');
+            }
+        }
+
+        // Claude AI Instructions - Copy to Clipboard
+        function copyClaudeInstructions() {
+            const instructions = `You are an Elf on the Shelf letter and scene creator! Help parents create magical Christmas content for their kids.
+
+## YOUR CAPABILITIES:
+1. **Elf Letters** - Create printable letters from the family's elf
+2. **Scene Ideas** - Suggest creative elf placement ideas with props lists
+3. **Daily Notes** - Short notes explaining what the elf did overnight
+
+## LETTER TYPES:
+- **Arrival Letter**: Elf returns for the season, introduces rules
+- **Daily Note**: Short note about elf's overnight adventure
+- **Nice Report**: Praise for good behavior
+- **Gentle Reminder**: Kind nudge about behavior
+- **Special Mission**: Fun task for kids (write to Santa, do a kind deed)
+- **Goodbye Letter**: Christmas Eve farewell, promise to return
+
+## LETTER STYLE GUIDE:
+- Use warm, magical, kid-friendly language
+- Address children by name
+- Sign with elf's name
+- Include festive touches (references to North Pole, Santa, magic)
+- Keep it age-appropriate and positive
+- For arrival letters: set expectations about no touching
+- For goodbye: be heartfelt but promise to return next year
+
+## SCENE DIFFICULTY LEVELS:
+- **Easy** (5 min): Minimal props, quick setup
+- **Medium** (10-15 min): Some crafting or multiple props
+- **Elaborate** (20+ min): Complex scenes, multiple elements
+
+## COMMON PROPS (suggest based on what families typically have):
+- Cotton balls (snow), mini marshmallows, ribbon/string
+- Toilet paper rolls, socks, shoes/slippers
+- Cereal, crackers, candy canes
+- Books, toys, stuffed animals
+- Paper, crayons, stickers
+- Bottle caps, tissue paper
+
+## WHEN ASKED FOR SCENES:
+1. Ask about difficulty preference
+2. Ask what props they have available
+3. Provide 2-3 options with clear setup instructions
+4. Include estimated setup time
+
+## WHEN ASKED FOR LETTERS:
+1. Ask for children's names
+2. Ask for elf's name
+3. Ask for letter type
+4. Ask for any specific context (behavior to address, special event)
+5. Create the letter with proper formatting
+
+Now help me create Elf on the Shelf magic! I'll tell you my kids' names, our elf's name, and what I need.`;
+
+            navigator.clipboard.writeText(instructions).then(() => {
+                const btn = document.getElementById('copyClaudeBtn');
+                btn.textContent = "✅ Copied! Now paste in Claude AI";
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = "📋 Copy Instructions for Claude AI";
+                    btn.classList.remove('copied');
+                }, 3000);
+            }).catch(err => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = instructions;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                const btn = document.getElementById('copyClaudeBtn');
+                btn.textContent = "✅ Copied! Now paste in Claude AI";
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = "📋 Copy Instructions for Claude AI";
+                    btn.classList.remove('copied');
+                }, 3000);
+            });
+        }
+
+        // Add buttons and containers to all day cards on load
+        document.addEventListener('DOMContentLoaded', function() {
+            for (let day = 1; day <= 25; day++) {
+                const cards = document.querySelectorAll('.day-card');
+                cards.forEach(card => {
+                    const dayNum = card.querySelector('.day-number');
+                    if (dayNum && dayNum.textContent.includes(`Day ${day}`)) {
+                        card.setAttribute('data-day', day);
+                        const content = card.querySelector('.day-content');
+                        if (content && alternatives[day]) {
+                            content.innerHTML += `
+                                <button class="alt-btn" onclick="toggleAlternatives(${day})">
+                                    🔄 Need Different Props? See Alternatives
+                                </button>
+                                <div class="alternatives"></div>
+                            `;
+                        }
+                    }
+                });
+            }
+
+            // Set up skill download with embedded zip
+            const skillZipBase64 = "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";
+
+            // Convert base64 to blob and create download URL
+            const byteCharacters = atob(skillZipBase64);
+            const byteNumbers = new Array(byteCharacters.length);
+            for (let i = 0; i < byteCharacters.length; i++) {
+                byteNumbers[i] = byteCharacters.charCodeAt(i);
+            }
+            const byteArray = new Uint8Array(byteNumbers);
+            const blob = new Blob([byteArray], { type: 'application/zip' });
+            const downloadUrl = URL.createObjectURL(blob);
+
+            // Set the download link
+            const downloadBtn = document.getElementById('downloadSkill');
+            if (downloadBtn) {
+                downloadBtn.href = downloadUrl;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Days of Elf on the Shelf Scene Ideas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            font-size: 14px;
+            opacity: 0.5;
+            letter-spacing: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .header .elf-names {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 24px;
+            margin-top: 15px;
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .week-section {
+            margin-bottom: 40px;
+        }
+
+        .week-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-number {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+        }
+
+        .day-date {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .difficulty {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .difficulty.easy {
+            background: #4ade80;
+            color: #166534;
+        }
+
+        .difficulty.medium {
+            background: #fbbf24;
+            color: #92400e;
+        }
+
+        .day-content {
+            padding: 20px;
+        }
+
+        .scene-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a472a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .scene-title::before {
+            content: "🎄";
+        }
+
+        .setup {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .props {
+            background: #f0fdf4;
+            border-left: 4px solid #4ade80;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .props-title {
+            font-weight: 700;
+            color: #166534;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .props-list {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .note {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .note-title {
+            font-weight: 700;
+            color: #92400e;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .note-text {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .bonus-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .bonus-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .props-checklist {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .checklist-header {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 28px;
+            color: #c41e3a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .checklist-item input {
+            width: 18px;
+            height: 18px;
+            accent-color: #c41e3a;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .footer .emoji-row {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .header {
+                background: #c41e3a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .day-card {
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+            .days-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Alternative Scene Styles */
+        .alt-btn {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .alt-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+        }
+
+        .alt-btn.showing {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        }
+
+        .alternatives {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px dashed #e5e7eb;
+        }
+
+        .alternatives.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .alt-scene {
+            background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+            border-left: 4px solid #8b5cf6;
+            padding: 12px 15px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 10px;
+        }
+
+        .alt-scene:last-child {
+            margin-bottom: 0;
+        }
+
+        .alt-scene-title {
+            font-weight: 700;
+            color: #6d28d9;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .alt-scene-setup {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .alt-scene-props {
+            font-size: 13px;
+            color: #7c3aed;
+        }
+
+        .alt-label {
+            display: inline-block;
+            background: #8b5cf6;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>❄ 25 Days of Elf Magic ❄</h1>
+        <p class="subtitle">Scene Ideas for the Christmas Season</p>
+        <p class="elf-names">Starring: Snowflake & Baby Elf</p>
+        <p class="subtitle" style="margin-top: 10px;">For Brooks, Harper, Vivian & Hayes</p>
+    </div>
+
+    <div class="container">
+        <!-- Week 1 -->
+        <div class="week-section">
+            <h2 class="week-header">🎄 Week 1: Arrival & Getting Settled (Dec 1-7) 🎄</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 1</div>
+                            <div class="day-date">December 1</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Grand Arrival with Baby Elf</h3>
+                        <p class="setup">Snowflake arrives with baby elf in a tiny basket "carrier", arrival letter nearby, small bag of "North Pole snow" (cotton balls)</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Baby elf, small basket, cotton balls, arrival letter, tiny blanket</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Naming instructions for baby elf</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 2</div>
+                            <div class="day-date">December 2</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Baby Elf's Name Celebration</h3>
+                        <p class="setup">Elves surrounded by tiny letter tiles/Scrabble pieces spelling out chosen name, mini celebration banner</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Letter tiles or Scrabble pieces, small ribbon/banner, confetti</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Thank you for naming baby elf!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 3</div>
+                            <div class="day-date">December 3</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Marshmallow Bubble Bath</h3>
+                        <p class="setup">Elves relaxing in a bowl or mug filled with mini marshmallows, tiny towel nearby</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Bowl or mug, mini marshmallows, small fabric scrap for towel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 4</div>
+                            <div class="day-date">December 4</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Movie Night</h3>
+                        <p class="setup">Elves sitting in front of TV with tiny popcorn bowl (bottle cap), cozy blanket</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Bottle cap, popped popcorn kernels, small fabric blanket</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 5</div>
+                            <div class="day-date">December 5</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Elf Classroom</h3>
+                        <p class="setup">Snowflake teaching baby elf! Mini "classroom" with elves at small table, tiny chalkboard with "How to Watch for Santa"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small paper chalkboard, tiny desk (matchbox), chalk drawing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 6</div>
+                            <div class="day-date">December 6</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Breakfast Surprise</h3>
+                        <p class="setup">Elves with a plate of donuts or treats and a note saying "We made breakfast!"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Donuts or treats, small note</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Praise for good behavior yesterday</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 7</div>
+                            <div class="day-date">December 7</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Craft Time</h3>
+                        <p class="setup">Elves surrounded by tiny scissors, paper scraps, and mini paper snowflakes they "made"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small scissors, paper scraps, pre-cut tiny snowflakes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="week-section">
+            <h2 class="week-header">🎅 Week 2: Adventures & Mischief (Dec 8-14) 🎅</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 8</div>
+                            <div class="day-date">December 8</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Zip Line Adventure</h3>
+                        <p class="setup">String/ribbon stretched across room, elves hanging from it with small hangers or clips</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">String or ribbon, clips or small hangers, attach to light fixtures/shelves</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 9</div>
+                            <div class="day-date">December 9</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Fishing Trip</h3>
+                        <p class="setup">Elves with tiny fishing poles (stick + string) over a sink or bowl with goldfish crackers</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small sticks, string, goldfish crackers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 10</div>
+                            <div class="day-date">December 10</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Snow Angels</h3>
+                        <p class="setup">Elves lying in flour or powdered sugar on counter making "snow angels"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Flour or powdered sugar, parchment paper (for easy cleanup!)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 11</div>
+                            <div class="day-date">December 11</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Game Night</h3>
+                        <p class="setup">Elves playing games with mini cards, dice, or board game pieces scattered around</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Playing cards, dice, or small game pieces</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 12</div>
+                            <div class="day-date">December 12</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Photo Booth Fun</h3>
+                        <p class="setup">Elves posing with family photos, maybe drew mustaches on printed photos (use dry erase on frames!)</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Family photos in frames, dry-erase markers, tiny props</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">"We love your family!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 13</div>
+                            <div class="day-date">December 13</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Indoor Camping</h3>
+                        <p class="setup">Tiny tent (napkin over sticks), mini campfire (orange/red tissue paper), elves with tiny s'mores</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Napkin, sticks, tissue paper for fire, mini marshmallows</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 14</div>
+                            <div class="day-date">December 14</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gift Wrapping Station</h3>
+                        <p class="setup">Elves surrounded by ribbon, small wrapped boxes, tape dispenser - busy helping!</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small boxes, wrapping paper scraps, ribbon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week-section">
+            <h2 class="week-header">⭐ Week 3: Holiday Spirit (Dec 15-21) ⭐</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 15</div>
+                            <div class="day-date">December 15</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gingerbread House</h3>
+                        <p class="setup">Elves building with graham crackers and icing, partially "built" house</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Graham crackers, icing, candy decorations</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Recipe card for family to make one together!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 16</div>
+                            <div class="day-date">December 16</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Epic Snowball Fight</h3>
+                        <p class="setup">Elves hiding behind barriers (books, boxes) with mini snowballs everywhere</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Cotton balls or white pom poms, small barriers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 17</div>
+                            <div class="day-date">December 17</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">North Pole Mail</h3>
+                        <p class="setup">Elves with tiny mailbox, envelopes, encouraging kids to write Santa</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small box as mailbox, mini envelopes, paper, crayons nearby</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Special Mission</div>
+                            <div class="note-text">Write your letters to Santa today!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 18</div>
+                            <div class="day-date">December 18</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Hot Cocoa Party</h3>
+                        <p class="setup">Elves with tiny mugs (thimbles or bottle caps), marshmallows, cocoa packets</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Thimbles or bottle caps, mini marshmallows, cocoa mix</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Suggest family hot cocoa night!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 19</div>
+                            <div class="day-date">December 19</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Decorating the Tree</h3>
+                        <p class="setup">Elves climbing the Christmas tree, tangled in garland or hanging on an ornament</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Christmas tree access, secure positioning (safety first!)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 20</div>
+                            <div class="day-date">December 20</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Story Time</h3>
+                        <p class="setup">Elves with a tiny book or sitting on a Christmas book, reading to stuffed animals</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small book or Christmas storybook, stuffed animals as audience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 21</div>
+                            <div class="day-date">December 21</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Caroling</h3>
+                        <p class="setup">Elves with tiny songbooks (folded paper), lined up like a choir</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tiny folded paper songbooks, arrange elves in choir formation</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">List of family's favorite Christmas songs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="week-section">
+            <h2 class="week-header">🎁 Week 4: The Final Countdown (Dec 22-25) 🎁</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 22</div>
+                            <div class="day-date">December 22</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Cookie Baking</h3>
+                        <p class="setup">Elves in kitchen with flour, mini cookie cutters, ready to make Santa's cookies</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Flour, small bowl, cookie cutters</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Cookie recipe for Santa's cookies!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Day 23</div>
+                            <div class="day-date">December 23</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Wrapping Chaos</h3>
+                        <p class="setup">Elves completely tangled in ribbon and wrapping paper, surrounded by tape and scissors</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Wrapping paper scraps, ribbon, tape</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card" style="border: 3px solid #ffd700;">
+                    <div class="day-header" style="background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);">
+                        <div>
+                            <div class="day-number">Day 24</div>
+                            <div class="day-date">December 24 - Christmas Eve</div>
+                        </div>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">The Goodbye</h3>
+                        <p class="setup">Elves with packed tiny suitcase, goodbye letter, small gift for each child</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tiny suitcase (matchbox), goodbye letter, candy canes or small treats</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Include Note</div>
+                            <div class="note-text">Heartfelt goodbye letter, promise to return next year</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card" style="border: 3px solid #ffd700;">
+                    <div class="day-header" style="background: linear-gradient(135deg, #ffd700 0%, #f59e0b 100%); color: #1a472a;">
+                        <div>
+                            <div class="day-number">Day 25</div>
+                            <div class="day-date">December 25 - Christmas!</div>
+                        </div>
+                        <span class="difficulty easy" style="background: white;">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Gone Until Next Year!</h3>
+                        <p class="setup">Empty spot where elves usually sit, with a small note or sprinkle of "magic dust"</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Small note, tiny bit of glitter (magic dust)</div>
+                        </div>
+                        <div class="note">
+                            <div class="note-title">Final Note</div>
+                            <div class="note-text">"See you next year! Love, Snowflake & [Baby Elf Name]"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonus Section -->
+        <div class="bonus-section">
+            <h2 class="bonus-header">🌟 Bonus Scenes (Swap In As Needed) 🌟</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Sick Day</div>
+                            <div class="day-date">When someone's under the weather</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Doctor Checkup</h3>
+                        <p class="setup">Elf in tissue box "bed" with tiny thermometer, encouraging rest</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Tissue box, small paper thermometer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Weekend</div>
+                            <div class="day-date">Family time suggestion</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Movie Theater</h3>
+                        <p class="setup">Elves set up movie area with popcorn, suggest family movie night</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Popcorn, small paper "tickets"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <div>
+                            <div class="day-number">Reminder</div>
+                            <div class="day-date">Gentle behavior nudge</div>
+                        </div>
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="day-content">
+                        <h3 class="scene-title">Naughty/Nice List</h3>
+                        <p class="setup">Elves with scroll showing "Nice List" with kids' names, small reminder note</p>
+                        <div class="props">
+                            <div class="props-title">Props Needed</div>
+                            <div class="props-list">Paper scroll, gentle reminder letter</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Props Checklist -->
+        <div class="props-checklist">
+            <h2 class="checklist-header">📋 Master Props Checklist 📋</h2>
+            <div class="checklist-grid">
+                <label class="checklist-item"><input type="checkbox"> Cotton balls</label>
+                <label class="checklist-item"><input type="checkbox"> Mini marshmallows</label>
+                <label class="checklist-item"><input type="checkbox"> Small fabric scraps</label>
+                <label class="checklist-item"><input type="checkbox"> String / ribbon</label>
+                <label class="checklist-item"><input type="checkbox"> Paper / cardstock</label>
+                <label class="checklist-item"><input type="checkbox"> Bottle caps / thimbles</label>
+                <label class="checklist-item"><input type="checkbox"> Tape & scissors</label>
+                <label class="checklist-item"><input type="checkbox"> Small toys / figurines</label>
+                <label class="checklist-item"><input type="checkbox"> Goldfish crackers</label>
+                <label class="checklist-item"><input type="checkbox"> Graham crackers</label>
+                <label class="checklist-item"><input type="checkbox"> Letter tiles / Scrabble</label>
+                <label class="checklist-item"><input type="checkbox"> Small sticks (fishing poles)</label>
+                <label class="checklist-item"><input type="checkbox"> Tissue paper (red/orange)</label>
+                <label class="checklist-item"><input type="checkbox"> Flour / powdered sugar</label>
+                <label class="checklist-item"><input type="checkbox"> Playing cards / dice</label>
+                <label class="checklist-item"><input type="checkbox"> Matchbox (tiny suitcase)</label>
+                <label class="checklist-item"><input type="checkbox"> White pom poms</label>
+                <label class="checklist-item"><input type="checkbox"> Small clips / hangers</label>
+                <label class="checklist-item"><input type="checkbox"> Candy canes</label>
+                <label class="checklist-item"><input type="checkbox"> Glitter (magic dust)</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="emoji-row">🎄 ❄ 🎅 🎁 ⭐ 🦌 ❄ 🎄</div>
+        <p>Have a magical Christmas season!</p>
+    </div>
+
+    <script>
+        // Alternative scenes for each day (when you don't have the props)
+        const alternatives = {
+            1: [
+                { title: "Parachute Landing", setup: "Elves tangled in a handkerchief 'parachute' as if they just landed", props: "Handkerchief or napkin, string" },
+                { title: "Sleeping In", setup: "Elves asleep in a shoe or slipper after their long journey", props: "Any shoe or slipper, tissue for blanket" }
+            ],
+            2: [
+                { title: "Drawing the Name", setup: "Elves with crayons and paper, baby elf's name written in colorful letters", props: "Paper, crayons" },
+                { title: "Name in Cereal", setup: "Baby elf's name spelled out in cereal pieces on the counter", props: "Any cereal (Cheerios work great)" }
+            ],
+            3: [
+                { title: "Toilet Paper Fort", setup: "Elves built a fort/tower out of toilet paper rolls", props: "Toilet paper rolls" },
+                { title: "Sock Sleeping Bag", setup: "Elves snuggled up in socks like sleeping bags", props: "Clean socks" }
+            ],
+            4: [
+                { title: "Book Stack Slide", setup: "Elves sliding down a stack of books like a slide", props: "Stack of books" },
+                { title: "Toy Car Race", setup: "Elves in/on toy cars lined up at a 'starting line'", props: "Toy cars, tape for finish line" }
+            ],
+            5: [
+                { title: "Coloring Time", setup: "Elves with crayons and coloring book, 'teaching' baby elf to color", props: "Coloring book, crayons" },
+                { title: "ABC Lesson", setup: "Elves pointing at alphabet magnets on the fridge", props: "Fridge magnets" }
+            ],
+            6: [
+                { title: "Fruit Snack Feast", setup: "Elves surrounded by opened fruit snack packages", props: "Fruit snacks" },
+                { title: "Cereal Party", setup: "Elves in/around a bowl of colorful cereal", props: "Bowl, cereal" }
+            ],
+            7: [
+                { title: "Sticker Fun", setup: "Elves covered in stickers or decorating paper with stickers", props: "Stickers, paper" },
+                { title: "Play-Doh Sculpture", setup: "Elves 'making' something with Play-Doh", props: "Play-Doh" }
+            ],
+            8: [
+                { title: "Climbing the Lamp", setup: "Elves scaling a lamp with ribbon or string", props: "Lamp, ribbon" },
+                { title: "Curtain Climbers", setup: "Elves hanging from curtains or curtain rod", props: "Curtains (position safely)" }
+            ],
+            9: [
+                { title: "Bathtub Boat", setup: "Elves in a plastic container 'boat' in the bathtub (dry)", props: "Plastic container, bathtub" },
+                { title: "Rubber Duck Party", setup: "Elves hanging out with rubber ducks", props: "Rubber ducks" }
+            ],
+            10: [
+                { title: "Pillow Mountain", setup: "Elves climbing or sitting atop a pile of pillows", props: "Pillows" },
+                { title: "Blanket Hammock", setup: "Elves in a small blanket/scarf hammock between chair legs", props: "Small blanket or scarf" }
+            ],
+            11: [
+                { title: "Puzzle Helpers", setup: "Elves 'working on' a puzzle with a few pieces moved", props: "Any puzzle" },
+                { title: "LEGO Builders", setup: "Elves building with LEGO blocks", props: "LEGO blocks" }
+            ],
+            12: [
+                { title: "Mirror Selfie", setup: "Elves posed in front of a mirror as if taking a selfie", props: "Small mirror" },
+                { title: "Sunglasses Fashion", setup: "Elves trying on kids' sunglasses or accessories", props: "Sunglasses, hats, etc." }
+            ],
+            13: [
+                { title: "Pillow Fort", setup: "Elves inside a small pillow/cushion fort", props: "Small pillows or cushions" },
+                { title: "Box House", setup: "Elves living in a shoebox 'house' with cut windows", props: "Shoebox" }
+            ],
+            14: [
+                { title: "Tape Madness", setup: "Elves tangled in tape, stuck to the counter", props: "Tape (painter's tape for easy cleanup)" },
+                { title: "Newspaper Pile", setup: "Elves hiding in crumpled newspaper/junk mail", props: "Newspaper or junk mail" }
+            ],
+            15: [
+                { title: "Cracker House", setup: "Elves building with any crackers you have", props: "Any crackers" },
+                { title: "Sugar Cube Tower", setup: "Elves stacking sugar cubes", props: "Sugar cubes" }
+            ],
+            16: [
+                { title: "Sock Snowballs", setup: "Elves having a 'snowball' fight with rolled up white socks", props: "White socks rolled into balls" },
+                { title: "Paper Ball Fight", setup: "Elves behind barriers with crumpled paper balls", props: "Crumpled paper" }
+            ],
+            17: [
+                { title: "Crayon Letter Writing", setup: "Elves at table with paper and crayons for Santa letters", props: "Paper, crayons, envelopes" },
+                { title: "Sticky Note Messages", setup: "Elves surrounded by sticky notes with messages to Santa", props: "Sticky notes, pen" }
+            ],
+            18: [
+                { title: "Tea Party", setup: "Elves at a toy tea set having a party", props: "Toy tea set or small cups" },
+                { title: "Candy Cane Snack", setup: "Elves nibbling on candy canes", props: "Candy canes" }
+            ],
+            19: [
+                { title: "Ornament Admiring", setup: "Elves sitting near the tree pointing at favorite ornaments", props: "Near Christmas tree" },
+                { title: "Tinsel Tangled", setup: "Elves wrapped up in tinsel or garland on the floor", props: "Tinsel or garland" }
+            ],
+            20: [
+                { title: "Stuffed Animal Huddle", setup: "Elves in a circle with stuffed animals having a meeting", props: "Stuffed animals" },
+                { title: "Pillow Reading Nook", setup: "Elves on a pillow with a small book", props: "Pillow, any small book" }
+            ],
+            21: [
+                { title: "Dance Party", setup: "Elves posed as if dancing near a phone/speaker", props: "Phone or small speaker" },
+                { title: "Instrument Band", setup: "Elves with toy instruments or kitchen items as instruments", props: "Toy instruments, wooden spoons, pots" }
+            ],
+            22: [
+                { title: "Sprinkle Art", setup: "Elves made shapes/pictures with sprinkles on a plate", props: "Sprinkles, plate" },
+                { title: "Cereal Art", setup: "Elves arranged cereal into a Christmas tree shape", props: "Cereal" }
+            ],
+            23: [
+                { title: "Bow Bonanza", setup: "Elves covered in gift bows stuck all over them", props: "Stick-on gift bows" },
+                { title: "Tissue Paper Mess", setup: "Elves buried in colorful tissue paper", props: "Tissue paper" }
+            ],
+            24: [
+                { title: "Note & Candy", setup: "Simple goodbye note with candy canes for each child", props: "Paper, pen, candy canes" },
+                { title: "Photo Memory", setup: "Elves with a printed photo of the family and goodbye note", props: "Printed photo, note" }
+            ],
+            25: [
+                { title: "Sparkle Trail", setup: "Empty spot with a trail of glitter leading to window", props: "A tiny bit of glitter" },
+                { title: "Thank You Note", setup: "Just a handwritten note thanking kids for a great season", props: "Paper, pen" }
+            ]
+        };
+
+        function toggleAlternatives(day) {
+            const card = document.querySelector(`[data-day="${day}"]`);
+            const altContainer = card.querySelector('.alternatives');
+            const btn = card.querySelector('.alt-btn');
+
+            if (altContainer.classList.contains('show')) {
+                altContainer.classList.remove('show');
+                btn.textContent = "🔄 Need Different Props? See Alternatives";
+                btn.classList.remove('showing');
+            } else {
+                // Generate alternatives if not already there
+                if (!altContainer.innerHTML) {
+                    const dayAlts = alternatives[day];
+                    if (dayAlts) {
+                        altContainer.innerHTML = dayAlts.map((alt, i) => `
+                            <div class="alt-scene">
+                                <span class="alt-label">Alternative ${i + 1}</span>
+                                <div class="alt-scene-title">${alt.title}</div>
+                                <div class="alt-scene-setup">${alt.setup}</div>
+                                <div class="alt-scene-props"><strong>Props:</strong> ${alt.props}</div>
+                            </div>
+                        `).join('');
+                    }
+                }
+                altContainer.classList.add('show');
+                btn.textContent = "✓ Hide Alternatives";
+                btn.classList.add('showing');
+            }
+        }
+
+        // Add buttons and containers to all day cards on load
+        document.addEventListener('DOMContentLoaded', function() {
+            for (let day = 1; day <= 25; day++) {
+                const cards = document.querySelectorAll('.day-card');
+                cards.forEach(card => {
+                    const dayNum = card.querySelector('.day-number');
+                    if (dayNum && dayNum.textContent.includes(`Day ${day}`)) {
+                        card.setAttribute('data-day', day);
+                        const content = card.querySelector('.day-content');
+                        if (content && alternatives[day]) {
+                            content.innerHTML += `
+                                <button class="alt-btn" onclick="toggleAlternatives(${day})">
+                                    🔄 Need Different Props? See Alternatives
+                                </button>
+                                <div class="alternatives"></div>
+                            `;
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
